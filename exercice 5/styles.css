@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: sans-serif;
 }
 
 ul {
@@ -46,3 +47,40 @@ a {
 }
 
 /* Exercice 5  */
+
+ul {
+  display: flex;
+  height: 90px;
+  border: 1px solid green;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+ul li {
+  flex: auto;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+ul li:nth-child(3):hover {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Exercice 5.2  */
+
+@media (max-width: 600px) {
+
+  ul {
+    flex-direction: column;
+    height: auto;
+  }
+
+
+
+}
